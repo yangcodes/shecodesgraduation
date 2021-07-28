@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Greek Yoghurt</title>
+    <style>
+      h1 {
+        color: beige;
+        font-size: 35px;
+        text-align: center;
+        font-weight: bold;
+      }
+
+      span {
+        color: #f29191;
+        font-size: 25px;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        border: 1px solid #eec4c4;
+        border-radius: 6px;
+        padding: 15px;
+        -webkit-text-stroke: 0.5px grey;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 90%;
+      }
+
+      p {
+        color: #f29191;
+        opacity: 0.7;
+        font-size: 20px;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        padding: 20px;
+        -webkit-text-stroke: 0.5px grey;
+        line-height: 1.5em;
+      }
+      .learn-more {
+        display: block;
+        margin: 20px 0 0 0;
+        color: beige;
+        text-decoration: none;
+        font-size: 20px;
+      }
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+      .footer {
+        text-align: center;
+      }
+      .container {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 60px;
+        background: #94d0cc;
+        border-radius: 10px;
+      }
+      .profile {
+        color: #f29191;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        font-size: 20px;
+        color: beige;
+        background: #eec4c4;
+        padding: 15px 20px;
+        border: 2px solid #f29191;
+        border-radius: 30px;
+        box-shadow: 2px 2px 2px #000;
+        transition: all 180ms ease-in-out;
+        font-weight: bold;
+      }
+      button:hover {
+        background: beige;
+        color: #f29191;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        <div>🥛</div>
+        I Love Yoghurt
+      </h1>
+      <h2><span>Especially Greek Yoghurt</span></h2>
+      <hr />
+      <img src =
+      https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhNmojdgdzMuesMh1AfuITcQ603Fu9I4CnWA&usqp=CAU""
+      alt= "Greek Yoghurt" width="300"/>
+      <hr />
+
+      <p>
+        <strong>Greek Yoghurt</strong>
+        is yogurt that has been strained to remove most of its whey, resulting
+        in a thicker consistency than regular unstrained yogurt, while still
+        preserving the distinctive sour taste of yogurt. Like many types of
+        yogurt, strained yogurt is often made from milk that has been enriched
+        by boiling off some of its water content, or by adding extra butterfat
+        and powdered milk. In Europe and North America, it is often made from
+        low-fat or fat-free cow's milk. In Iceland, a similar product named
+        <em>skyr</em> is made.
+      </p>
+
+      <br />
+      <a
+        href="https://en.wikipedia.org/wiki/Strained_yogurt"
+        target="_blank"
+        class="learn-more"
+      >
+        Read More on wikipedia</a
+      >
+
+      <button>Get Your Yoghurt Now 😋</button>
+      <p class="footer">
+        This page is built by
+        <a href="https://github.com/yangcodes" target="_blank" class="profile">
+          Jenny Yang Martlin</a
+        >
+      </p>
+
+      <script>
+        function getYoghurt() {
+          let name = prompt("What is your name?");
+          let email = prompt("What is your email address?");
+          name = name.trim();
+          email = email.trim();
+
+          if (name.length === 0) {
+            alert("Hmm, no yoghurt for you, you no name🤔");
+          } else
+            alert("Thank you, " + name + " we will get back to you soon🤗");
+        }
+
+        let collectInfo = document.querySelector("button");
+
+        collectInfo.addEventListener("click", getYoghurt);
+      </script>
+    </div>
+  </body>
+</html>
